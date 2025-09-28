@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 5 - Stanisław Łybacki</title>
+    <script language="JavaScript">
+        function WinOpen_Lybacki_grafika1() {
+            let okno = window.open("", "grafika1","width=350,height=350,top=50,left=50");
+            okno.document.write(`
+                <html><body style="text-align:center;">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.KvnZQy9Gneq7dTsKaDT12wHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" width="300"><br>
+                    <p style="color:red;">Robert Lewandowski</p>
+                </body></html>
+            `);
+        }
+
+        function WinOpen_Lybacki_grafika2() {
+            let okno = window.open("", "grafika2","width=350,height=350,top=100,left=450");
+            okno.document.write(`
+                <html><body style="text-align:center;">
+                    <img src="https://www.goal.pl/wp-content/uploads/2025/09/Cristiano-Ronaldo-6.jpg" width="300"><br>
+                    <p style="color:green;">Cristiano Ronaldo</p>
+                </body></html>
+            `);
+        }
+
+        function WinOpen_Lybacki_grafika3() {
+            let okno = window.open("", "grafika3","width=350,height=350,top=300,left=50");
+            okno.document.write(`
+                <html><body style="text-align:center;">
+                    <img src="https://i.iplsc.com/arkadiusz-milik/000GCLSWABNE0T47-C116-F4.jpg" width="300"><br>
+                    <p style="color:blue;">Arkadiusz Milik</p>
+                </body></html>
+            `);
+        }
+
+        function WinOpen_Lybacki_grafika4() {
+            let okno = window.open("", "grafika4","width=350,height=350,top=300,left=450");
+            okno.document.write(`
+                <html><body style="text-align:center;">
+                    <img src="https://cdn.theathletic.com/app/uploads/2023/01/26081952/GettyImages-1421935412-scaled.jpg" width="300"><br>
+                    <p style="color:orange;">Mateusz Cash</p>
+                </body></html>
+            `);
+        }
+
+        function okno_zamknij_Lybacki() {
+            window.close();
+        }
+    </script>
+</head>
+<body style="text-align:center; font-family:Arial;">
+    <h2 style="color:blue;">Stanisław Łybacki, klasa 3F, nr 16</h2>
+    <h3 style="color:red;">Obliczamy układ 1</h3>
+    <p>Piłkarze:</p>
+    <button onclick="WinOpen_Lybacki_grafika1()">Grafika 1</button>
+    <button onclick="WinOpen_Lybacki_grafika2()">Grafika 2</button>
+    <button onclick="WinOpen_Lybacki_grafika3()">Grafika 3</button>
+    <button onclick="WinOpen_Lybacki_grafika4()">Grafika 4</button>
+    <br><br>
+    <button onclick="okno_zamknij_Lybacki()">Zamknij okno</button>
+</body>
+</html>
