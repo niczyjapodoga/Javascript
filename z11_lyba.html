@@ -1,23 +1,18 @@
-        <html> 
-         <body> 
-          <div style="color:green;font-size:50px;"> 
-            <script language="JavaScript"> 
-// Stanisław Łybacki  3F   29.09.2025 
-// Zadanie 11  
-              var D1_bil=prompt("Data1=",""); 
-              var D2_bil=prompt("Data2=",""); 
-              var sekund; 
-              var a=parseFloat(D1_bil); 
-              var b=parseFloat(D2_bil); 
-                sekund=(a-b)*24*60*60; 
-              document.write("Ilość sekund między dniami "+a+" i "+b+" = "+sekund+"<br>"); 
-                function okno_zamknij_bilyi() 
-                 { 
-                   window.close() 
-                 } 
-              </script> 
-            </div> 
-          <input type="button" value="zamknij okno" onclick="okno_zamknij_bilyi()"/> 
-        </body> 
-       </html> 
-
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Zadanie 11 – Łybacki</title>
+</head>
+<body>
+<div style="color:green;font-size:30px;">
+<script>
+var D1 = parseInt(prompt("Podaj pierwszy dzień miesiąca:", ""));
+var D2 = parseInt(prompt("Podaj drugi dzień miesiąca:", ""));
+var sekundy = (D1 - D2) * 24 * 60 * 60;
+document.write("Ilość sekund między dniami " + D1 + " i " + D2 + " = " + sekundy + " sekund");
+</script>
+</div>
+<input type="button" value="zamknij okno" onclick="window.close()"/>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Zadanie 8 – Łybacki</title>
+<script>
+function show_confirm_lybacki() {
+    var r = confirm("Naciśnij OK lub Cancel");
+    if (r == true) document.write("Nacisnąłeś OK!");
+    else document.write("Nacisnąłeś Cancel!");
+}
+</script>
+</head>
+<body>
+<input type="button" onclick="show_confirm_lybacki()" value="Pokaż Confirm Box" />
+<input type="button" value="zamknij okno" onclick="window.close()"/>
+</body>
+</html>

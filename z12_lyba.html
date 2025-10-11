@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Zadanie 12 – Łybacki</title>
+</head>
+<body>
+<div style="color:green;font-size:30px;">
+<script>
+var D1 = parseInt(prompt("Podaj pierwszy dzień:", ""));
+var G1 = parseInt(prompt("Podaj pierwszą godzinę:", ""));
+var D2 = parseInt(prompt("Podaj drugi dzień:", ""));
+var G2 = parseInt(prompt("Podaj drugą godzinę:", ""));
+var sekundy = ((D1*24+G1)-(D2*24+G2))*60*60;
+document.write("Ilość sekund między dniami i godzinami = " + sekundy + " sekund");
+</script>
+</div>
+<input type="button" value="zamknij okno" onclick="window.close()"/>
+</body>
+</html>
