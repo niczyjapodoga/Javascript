@@ -1,15 +1,30 @@
-<!DOCTYPE html>   
-<head>    
-<title> Przykłady dostępu do elementów </title>    
-<meta charset="utf-8">   
-<style type="text/css">      
-.wyroznienieCzerwone { color: Red; font-weight: 600; }     
-</style> 
-</head>  
-<body>   
-<div id="nazwa"></div>   
-<script> 
-document.getElementById("nazwa").innerHTML = "Witaj";         
-document.getElementById("nazwa").className = "wyroznienieCzerwone";   
-</script>  
-</body>
+<html>
+	<head>  
+		<title></title>          
+    
+	</head> 
+<body>    
+	1 Wymień cztery sposoby <b><u>wyprowadzania danych w JS</b></u> <br><br>
+			-Cztery sposoby wyprowadzania danych na stronę:<br>
+				1 do tabeli<br>
+				2 do okienek formularza<br>
+				3 z użyciem okienka alert()<br>
+				4 z użyciem dokument.write()<br><br>
+	2 Czym jest funkcja w JS, omów przy użyciu 4 podpunktów?<br><br>
+			1 Jest to zbiór zgrupowanych instrukcji, które możemy uruchamiać poprzez podanie ich nazwy, <br>
+			2 Każda funkcja po wywołaniu wykonuje swój wewnętrzny kod,<br>
+			3 Funkcja może mieć argumenty, które wchodzą do wnętrza funkcji i są tam przetwarzane np.
+			suma_luk(a, b),<br>
+			4 Może(nie zawsze) zwrócić obliczoną wartość zapisaną po słowie kluczowym <b><u>return</b></u>.<br><br>
+	3 Omów metody <b> getElementsByName, getElementById, getElementByTagName </b><br><br>
+			1 getElementById(„id”) - dostęp do wszystkich elementów o konkretnej wartości atrybutu id <br>
+			2 getElementByTagName(„znacznik”) - dostęp do wszystkich elementów o typie znacznika, np. P lub DIV <br>
+			3 getElementByName(„nazwa”) - dostęp do wszystkich elementów o konkretnej wartości atrybutu <br><br>
+	4 Omów właściwości <b>innerHTML innerText className</b>. <br>
+			<b><u>Właściwości tak pobranego elementu to:</b></u><br><br>
+			<tab>	- <b>innerHTML</b> – jest to właściwość, która umożliwia odczyt, zmodyfikowanie, wstawienie, albo
+				usunięcie kodu HTML z danego elementu HTML np. w tabeli,<br>
+				- <b>innerText</b> – umożliwia określenie ciągu znaków który zostanie umieszczony w elemencie,<br>
+				- <b>className</b> – umożliwia określenie klasy CSS użytej do prezentacji elementu.<br>
+</body> 
+</html> 
