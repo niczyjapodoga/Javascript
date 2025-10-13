@@ -5,16 +5,16 @@
  </head> 
 <body> 
  <script type="text/javascript"> 
-  function pole() 
+  function pole_łybacki() 
    { 
  var a= parseFloat(document.getElementById('dlugosc').value); 
  var b= a*a; 
         document.getElementById("nazwa").innerHTML ="Pole kwadratu= "+b.toFixed(2)+" cm^2";  
    } 
-  function obwod() 
+  function obwod_łybacki() 
    { 
- var a= parseFloat(document.getElementById('dlugosc').value); 
- var b= 4*a; 
+ var a_lyb= parseFloat(document.getElementById('dlugosc').value); 
+ var b_lyb= 4*a; 
         document.getElementById("nazwa").innerHTML ="Obwód kwadratu= "+b.toFixed(2)+" cm";  
    } 
  </script> 
@@ -24,4 +24,5 @@
   <input type="button" name="obwod" value="Oblicz obwod" Onclick="obwod()"><br><br> 
   <div  style="color:red;font-size:50px;"id="nazwa"></div> 
 </body> 
+
 </html> 
