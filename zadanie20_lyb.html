@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head><meta charset="utf-8"><title>Zadanie20</title></head>
+<body>
+<h2>Zadanie 20 — Trójkąt</h2>
+<script>
+var xa=parseFloat(prompt('xa=')); var ya=parseFloat(prompt('ya='));
+var xb=parseFloat(prompt('xb=')); var yb=parseFloat(prompt('yb='));
+var xc=parseFloat(prompt('xc=')); var yc=parseFloat(prompt('yc='));
+function dist(x1,y1,x2,y2){ return Math.sqrt((x1-x2)**2+(y1-y2)**2); }
+document.write('AB='+dist(xa,ya,xb,yb).toFixed(4)+'<br>');
+document.write('BC='+dist(xb,yb,xc,yc).toFixed(4)+'<br>');
+document.write('AC='+dist(xa,ya,xc,yc).toFixed(4));
+</script>
+</body></html>

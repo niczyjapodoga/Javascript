@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="pl"><head><meta charset="utf-8"><title>Zadanie23</title></head>
+<body>
+D=<input id="D"> X=<input id="X">
+<input type="button" onclick="licz()" value="OK">
+<div id="w"></div>
+<script>
+function licz(){
+ var D=parseFloat(D.value), X=parseFloat(X.value);
+ var L=Math.sqrt(D*D+X*X), k=Math.atan2(D,X)*180/Math.PI;
+ w.innerHTML="L="+L.toFixed(4)+"<br>Kąt="+k.toFixed(2);
+}
+</script></body></html>

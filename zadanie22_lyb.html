@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="pl"><head><meta charset="utf-8"><title>Zadanie22</title></head>
+<body>
+a=<input id="a"> b=<input id="b">
+<input type="button" value="Pole" onclick="pole()">
+<input type="button" value="Obwód" onclick="obwod()">
+<div id="p"></div><div id="o"></div>
+<script>
+function pole(){ var a=parseFloat(a.value); var b=parseFloat(b.value); p.innerHTML="Pole="+(a*b); }
+function obwod(){ var a=parseFloat(a.value); var b=parseFloat(b.value); o.innerHTML="Obwód="+(2*(a+b)); }
+</script>
+</body></html>

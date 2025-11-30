@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Zad27</title></head>
+<body>
+odl=<input id="o"> s=<input id="s">
+<input type="button" onclick="go()" value="OK">
+<div id="w"></div>
+<script>
+function go(){
+ var odl=parseFloat(o.value), s=parseFloat(s.value);
+ if(s<=0||odl<=0||odl>s){ w.innerHTML="Błąd"; return; }
+ var th=Math.acos(odl/s), h=s*Math.sin(th);
+ w.innerHTML="h="+h.toFixed(4)+"<br>kąt="+(th*180/Math.PI).toFixed(2);
+}
+</script>
+</body></html>
