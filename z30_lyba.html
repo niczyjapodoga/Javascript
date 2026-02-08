@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Zadanie 30</title>
+</head>
+<body>
+
+<h2>Zadanie 30 – Metody obiektu</h2>
+
+<script>
+class Samochod {
+  constructor(marka, predkosc) {
+    this.marka = marka;
+    this.predkosc = predkosc;
+  }
+
+  przyspiesz(x) {
+    this.predkosc += x;
+  }
+}
+
+var auto = new Samochod("Audi", 40);
+auto.przyspiesz(30);
+
+document.write("Prędkość samochodu: " + auto.predkosc + " km/h");
+</script>
+
+</body>
+</html>

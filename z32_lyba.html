@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Zadanie 32</title>
+</head>
+<body>
+
+<h2>Zadanie 32 – Tablica obiektów Samochód</h2>
+
+<script>
+class Samochod {
+  constructor(marka) {
+    this.marka = marka;
+  }
+}
+
+var auta = [
+  new Samochod("BMW"),
+  new Samochod("Audi"),
+  new Samochod("Ford")
+];
+
+for (var i = 0; i < auta.length; i++) {
+  document.write(auta[i].marka + "<br>");
+}
+</script>
+
+</body>
+</html>

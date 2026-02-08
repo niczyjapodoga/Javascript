@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Zadanie 31</title>
+</head>
+<body>
+
+<h2>Zadanie 31 – Funkcja i obiekt</h2>
+
+<script>
+class Samochod {
+  constructor(marka) {
+    this.marka = marka;
+  }
+}
+
+function pokazSamochod(auto) {
+  return "Marka samochodu: " + auto.marka;
+}
+
+var s = new Samochod("Toyota");
+document.write(pokazSamochod(s));
+</script>
+
+</body>
+</html>
