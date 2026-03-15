@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Podaj liczby</p>
+<input type="text" id="a">
+<input type="text" id="b">
+<button onclick="licz()">Oblicz</button>
+<p id="wynik"></p>
+<script>
+function licz(){
+var a = document.getElementById("a").value;
+var b = document.getElementById("b").value;
+if(a=="" || b==""){
+document.getElementById("wynik").innerHTML="Podaj obie liczby";
+}
+else{
+a=parseFloat(a);
+b=parseFloat(b);
+if(b==0){
+document.getElementById("wynik").innerHTML="Nie wolno dzielić przez zero";
+}
+else{
+var iloraz = a/b;
+document.getElementById("wynik").innerHTML="Wynik = "+iloraz;
+}
+}
+}
+</script>
+</body>
+</html>

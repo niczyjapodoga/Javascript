@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Zadanie34 Łybacki</title>
+<script>
+function wyjscie() {
+    var decyzja = confirm("Czy na pewno chcesz opuścić stronę?");
+    if(decyzja == false){
+        history.back();
+    }
+    else{
+        alert("Dziękujemy za odwiedzenie naszej strony");
+    }
+}
+</script>
+</head>
+<body onunload="wyjscie()">
+<h2>Stanisław Łybacki 3F nr 16</h2>
+<p>Spróbuj zamknąć stronę.</p>
+</body>
+</html>

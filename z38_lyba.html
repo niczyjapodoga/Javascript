@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body style="background:silver">
+<script>
+var liczba = prompt("Podaj liczbę:");
+var liczba1 = 9;
+var liczba2 = 16;
+var liczba3 = 7;
+var liczba4 = 11;
+
+document.write("<div style='color:green;font-size:40px'>");
+document.write("Stanisław Łybacki<br>");
+document.write("liczba1="+liczba1+"<br>");
+document.write("liczba2="+liczba2+"<br>");
+document.write("liczba3="+liczba3+"<br>");
+document.write("liczba4="+liczba4+"<br>");
+document.write("</div>");
+
+if(liczba > liczba1 && liczba <= liczba2){
+document.write("Liczba należy do przedziału ("+liczba1+" ; "+liczba2+"]");
+}
+else if(liczba < liczba1){
+document.write("Liczba należy do przedziału (-∞ ; "+liczba1+")");
+}
+else{
+document.write("Liczba należy do przedziału ["+liczba2+" ; +∞)");
+}
+</script>
+</body>
+</html>
