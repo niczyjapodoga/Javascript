@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<body>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b<br>
+<script>
+var a_lyb = parseInt(prompt("a="));
+var b_lyb = parseInt(prompt("b="));
+
+for (var i = 1; i <= b_lyb; i++) document.write("*");
+document.write("<br>");
+
+var wiersz_lyb = "*";
+for (var i = 1; i <= (b_lyb - 2); i++) {
+    wiersz_lyb = wiersz_lyb + "&nbsp;&nbsp;";
+}
+wiersz_lyb = wiersz_lyb + "*";
+
+for (var i = 1; i <= (a_lyb - 2); i++) {
+    if (i == 2) document.write(wiersz_lyb + "&nbsp;a<br>");
+    else document.write(wiersz_lyb + "<br>");
+}
+
+for (var i = 1; i <= b_lyb; i++) document.write("*");
+</script>
+</body>
+</html>

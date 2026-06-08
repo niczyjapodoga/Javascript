@@ -1,0 +1,33 @@
+<html>
+<html>
+<body>
+
+<div id="out"></div>
+
+<script>
+let a_lyb = parseInt(prompt("Pierwsza liczba"));
+let b_lyb = parseInt(prompt("Druga liczba"));
+
+let out_lyb = document.getElementById("out");
+
+if (a_lyb == b_lyb) {
+    alert("Liczby są równe - brak obliczeń");
+} 
+else if (a_lyb < b_lyb) {
+    for (let i_lyb = a_lyb; i_lyb <= b_lyb; i_lyb++) {
+        if (i_lyb % 2 != 0) {
+            out_lyb.innerHTML += "<span style='color:green'>" + i_lyb + "</span><br>";
+        }
+    }
+} 
+else {
+    for (let i_lyb = a_lyb; i_cza >= b_lyb; i_lyb--) {
+        if (i_lyb % 2 != 0) {
+            out_lyb.innerHTML += "<span style='color:blue;font-size:10px'>" + i_lyb + "</span><br>";
+        }
+    }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+<body>
+
+<button onclick="oblicz()">Silnia</button>
+
+<p id="w"></p>
+
+<script>
+function oblicz(){
+    let n_lyb = prompt("Podaj n");
+    let silnia_lyb = 1;
+
+    for(let i = 1; i <= n_lyb; i++){
+        silnia_lyb *= i;
+    }
+
+    document.getElementById("w").innerHTML =
+    "n=" + n_lyb + "<br>" + n_lyb + "! = " + silnia_lyb;
+}
+</script>
+
+</body>
+</html>

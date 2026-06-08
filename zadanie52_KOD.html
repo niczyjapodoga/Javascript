@@ -1,0 +1,22 @@
+<xmp>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Zadanie 52</title>
+</head>
+<body>
+<script>
+var ile = parseInt(prompt("ile razy powtórzyć="));
+var tekst = prompt("podaj twoje inicjały=");
+
+for (var i = 1; i <= ile; i++) {
+    for (var k = 1; k <= i; k++) {
+        document.write("&nbsp;");
+    }
+    document.write(i + "_" + tekst + "_" + i + "<br>");
+}
+</script>
+</body>
+</html>
+</xmp>

@@ -1,0 +1,25 @@
+<xmp>
+<html>
+<html lang="pl">
+<body>
+<script>
+var nazwisko = prompt("Nazwisko:"), imie = prompt("Imię:");
+var a_lyb = (nazwisko.length % 4) + 5, b_lyb = (imie.length % 6) + 20;
+
+document.write("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b<br>");
+
+for (var i = 1; i <= b_lyb; i++) document.write("*");
+document.write("<br>");
+
+for (var i = 1; i <= (a_lyb - 2); i++) {
+    document.write("*");
+    for (var j = 1; j <= (b_lyb - 2); j++) document.write("&nbsp;&nbsp;");
+    if (i == 2) document.write("*&nbsp;a<br>");
+    else document.write("*<br>");
+}
+
+for (var i = 1; i <= b_lyb; i++) document.write("*");
+</script>
+</body>
+</html>
+</xmp>
